@@ -1,0 +1,17 @@
+body {
+    background-color: #F5F0E6;
+}
+
+h1 {
+    color: #2C5F6F;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
