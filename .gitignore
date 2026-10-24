@@ -2,3 +2,6 @@ Thumbs.db
 .vscode/
 imagenes-pdfs/files.zip
 imagenes-pdfs/StatementOfResult.pdf
+*.swp
+*.log
+.DS_Store
