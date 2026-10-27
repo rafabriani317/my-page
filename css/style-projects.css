@@ -1,3 +1,5 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
     background-color: #F5F0E6;
 }
@@ -15,3 +17,43 @@ p {
     font-weight: 400;
 }
 
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #2C5F6F;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+nav a {
+    color: #F5F0E6;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav .logo {
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: #B85C38;
+}
+
+/* Contenido */
+main {
+    padding: 40px;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
