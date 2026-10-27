@@ -3,7 +3,7 @@
 body {
   color: #2C5F6F;
   font-family: 'Quicksand', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
   background-color: #EBDDC4;
 }
@@ -14,13 +14,17 @@ a {
 
 nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 20px;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   list-style: none;
@@ -31,15 +35,43 @@ main {
 }
 
 h1 {
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 .cards {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "whoiam"
+    "projects"
+    "hobbies"
+    "contact";
   gap: 20px;
 }
 
 .card {
   padding: 20px;
+}
+
+.card:nth-child(1) { grid-area: whoiam; }
+.card:nth-child(2) { grid-area: projects; }
+.card:nth-child(3) { grid-area: hobbies; }
+.card:nth-child(4) { grid-area: contact; }
+
+@media (min-width: 1024px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "whoiam projects"
+      "hobbies contact";
+  }
 }

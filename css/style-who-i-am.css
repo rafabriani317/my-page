@@ -31,15 +31,25 @@ a {
     font-weight: 700;
 }
 
+figcaption,
+table {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
 nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 20px;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     list-style: none;
@@ -55,6 +65,17 @@ main {
 
 .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+    }
+
+    .about-content {
+        flex-direction: row;
+    }
 }
