@@ -3,74 +3,43 @@
 body {
   color: #2C5F6F;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
-  background-color: #F5F0E6;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #EBDDC4;
 }
 
-/* Navbar */
+a {
+  color: #B85C38;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #2C5F6F;
+  padding: 20px;
 }
 
 nav ul {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   list-style: none;
 }
 
-nav a {
-  color: #F5F0E6;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-nav .logo {
-  font-size: 24px;
-}
-
-nav a:hover {
-  color: #B85C38;
-}
-
-/* Contenido */
 main {
-  padding: 40px;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
 .card {
-  flex: 1 1 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 24px;
-  background-color: #FFFDF8;
-  border-radius: 12px;
-}
-
-.card h2 {
-  font-size: 22px;
-}
-
-.card a {
-  color: #B85C38;
-  font-weight: 700;
+  padding: 20px;
 }
