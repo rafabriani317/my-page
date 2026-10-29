@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+
+// Fondo del navbar de Bootstrap con la paleta propia
+.navbar {
+    background-color: $color-primario;
+}

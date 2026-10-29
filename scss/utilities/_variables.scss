@@ -1,0 +1,35 @@
+// Colores de la paleta
+$color-primario: #2C5F6F;
+$color-acento: #B85C38;
+$color-claro: #F5F0E6;
+$color-fondo: #EBDDC4;
+
+// Tipografía
+$fuente-base: 'Quicksand', sans-serif;
+$tamano-h1: 48px;
+$tamano-h2: 36px;
+$tamano-texto: 20px;
+$tamano-chico: 14px;
+$peso-normal: 400;
+$peso-negrita: 700;
+
+// Espaciados
+$espaciado: 20px;
+$espaciado-medio: 8px;
+$espaciado-chico: 4px;
+
+// Animaciones y estados
+$duracion-transicion: 0.3s;
+$duracion-animacion: 0.5s;
+$opacidad-activa: 0.7;
+$opacidad-completa: 1;
+$desplazamiento-entrada: 20px;
+
+// Tamaños
+$ancho-carousel: 800px;
+
+// Breakpoints
+$breakpoints: (
+    "tablet": 768px,
+    "desktop": 1024px
+);

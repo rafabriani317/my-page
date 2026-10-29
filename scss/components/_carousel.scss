@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+
+// Carousel de Bootstrap de hobbies
+.carousel {
+    max-width: $ancho-carousel;
+}

@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Grilla de cards de index
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "whoiam"
+        "projects"
+        "hobbies"
+        "contact";
+    gap: $espaciado;
+
+    @include desde("desktop") {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "whoiam projects"
+            "hobbies contact";
+    }
+}
+
+.card {
+    padding: $espaciado;
+    color: $color-primario;
+
+    &:nth-child(1) { grid-area: whoiam; }
+    &:nth-child(2) { grid-area: projects; }
+    &:nth-child(3) { grid-area: hobbies; }
+    &:nth-child(4) { grid-area: contact; }
+}

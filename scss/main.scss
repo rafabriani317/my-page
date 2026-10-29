@@ -1,0 +1,15 @@
+// Archivo maestro: único punto de entrada, solo @use
+@use "utilities/variables";
+@use "utilities/mixins";
+@use "base/base";
+@use "base/tipografia";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "layout/about";
+@use "components/buttons";
+@use "components/cards";
+@use "components/carousel";
+@use "components/table";
+@use "base/animaciones";
+@use "base/accesibilidad";

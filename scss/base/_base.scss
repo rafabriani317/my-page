@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+
+// Estilos globales a etiquetas
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-fondo;
+}
+
+main {
+    padding: $espaciado;
+}

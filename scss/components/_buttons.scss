@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+
+// Botón hamburguesa del navbar
+.navbar-toggler {
+    border-color: $color-claro;
+    transition: border-color $duracion-transicion, opacity $duracion-transicion;
+
+    &:hover,
+    &:focus {
+        border-color: $color-acento;
+    }
+
+    &:active {
+        opacity: $opacidad-activa;
+    }
+}
+
+// Flechas del carousel
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity $duracion-transicion;
+
+    &:hover,
+    &:focus {
+        opacity: $opacidad-completa;
+    }
+
+    &:active {
+        opacity: $opacidad-activa;
+    }
+}

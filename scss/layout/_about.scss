@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Sección "About me" de who-i-am
+.about {
+    margin-bottom: $espaciado;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $espaciado;
+
+    @include desde("desktop") {
+        flex-direction: row;
+    }
+}

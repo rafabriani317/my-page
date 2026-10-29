@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "variables" as *;
+
+// Media query mobile-first: @include desde("tablet") { ... }
+@mixin desde($nombre) {
+    $ancho: map.get($breakpoints, $nombre);
+
+    @if $ancho {
+        @media (min-width: $ancho) {
+            @content;
+        }
+    } @else {
+        @error "El breakpoint '#{$nombre}' no existe.";
+    }
+}

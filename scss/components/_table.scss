@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Tabla de Bootstrap de who-i-am con la paleta propia
+.table {
+    th,
+    td {
+        background-color: transparent;
+        color: $color-primario;
+        font-size: $tamano-chico;
+        padding: $espaciado-chico;
+
+        @include desde("tablet") {
+            font-size: $tamano-texto;
+            padding: $espaciado-medio;
+        }
+    }
+}
+
+caption {
+    caption-side: top;
+}

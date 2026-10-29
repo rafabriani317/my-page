@@ -1,0 +1,45 @@
+@use "../utilities/variables" as *;
+
+h1 {
+    color: $color-primario;
+    font-family: $fuente-base;
+    font-size: $tamano-h1;
+    font-weight: $peso-negrita;
+    margin-bottom: $espaciado;
+}
+
+h2 {
+    color: $color-primario;
+    font-family: $fuente-base;
+    font-size: $tamano-h2;
+    font-weight: $peso-negrita;
+}
+
+p {
+    font-family: $fuente-base;
+    font-size: $tamano-texto;
+    font-weight: $peso-normal;
+}
+
+a {
+    color: $color-acento;
+    font-family: $fuente-base;
+    font-size: $tamano-texto;
+    font-weight: $peso-negrita;
+    transition: color $duracion-transicion, opacity $duracion-transicion;
+
+    &:hover,
+    &:focus {
+        color: $color-primario;
+    }
+
+    &:active {
+        opacity: $opacidad-activa;
+    }
+}
+
+figcaption,
+table {
+    font-family: $fuente-base;
+    font-size: $tamano-texto;
+}

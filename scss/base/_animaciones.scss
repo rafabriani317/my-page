@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+
+// Animación propia: entrada suave del título
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY($desplazamiento-entrada);
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: aparecer $duracion-animacion ease-out forwards;
+}

@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+// Logo y links del navbar
+.navbar {
+    .navbar-brand,
+    .nav-link {
+        color: $color-claro;
+        font-size: $tamano-texto;
+        font-weight: $peso-negrita;
+        transition: color $duracion-transicion, opacity $duracion-transicion;
+
+        &:hover,
+        &:focus {
+            color: $color-acento;
+        }
+
+        &:active {
+            opacity: $opacidad-activa;
+        }
+    }
+}
