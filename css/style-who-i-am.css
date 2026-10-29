@@ -103,6 +103,8 @@ main {
 .table td {
     background-color: transparent;
     color: #2C5F6F;
+    font-size: 14px;
+    padding: 4px;
 }
 
 caption {
@@ -116,8 +118,46 @@ caption {
     gap: 20px;
 }
 
+@media (min-width: 768px) {
+    .table th,
+    .table td {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
 @media (min-width: 1024px) {
     .about-content {
         flex-direction: row;
+    }
+}
+
+/* Animación propia: entrada suave del título */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: aparecer 0.5s ease-out forwards;
+}
+
+/* Accesibilidad: menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
